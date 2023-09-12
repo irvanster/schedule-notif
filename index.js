@@ -4,6 +4,7 @@ const admin = require("firebase-admin");
 const serviceAccount = require("./google-services.json");
 const schedule = require("node-schedule");
 const dayjs = require("dayjs");
+const cors = require('cors')
 app.use(express.json());
 app.use(cors());
 admin.initializeApp({
