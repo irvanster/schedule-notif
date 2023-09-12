@@ -5,6 +5,7 @@ const serviceAccount = require("./google-services.json");
 const schedule = require("node-schedule");
 const dayjs = require("dayjs");
 app.use(express.json());
+app.use(cors());
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
 });

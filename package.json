@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
     "dayjs": "^1.11.9",
     "express": "^4.18.2",
     "firebase-admin": "^11.10.1",
