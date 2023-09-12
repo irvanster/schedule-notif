@@ -25,8 +25,8 @@ app.post("/scheduler", (req, res) => {
   schedule.scheduleJob(startDate, () => {
     const payload = {
       notification: {
-        title: "Impact Todo List",
-        body: `Pengingat ${message} Dimulai dalam 5 Menit lagi ya!`,
+        title: `${message} - Impact Todo List`,
+        body: `⏰ Pengingat: ${message} Dimulai ${reminder == "pass" ? 'Saat Ini yaa.':'dalam 5 Menit lagi yaa'}`,
       },
       token: token,
     };
